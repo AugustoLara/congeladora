@@ -1,0 +1,58 @@
+.expand-description
+    background: $white
+    height: auto
+    margin: auto
+    width: 70%
+
+    div
+        display: flex
+        align-items: center
+        justify-content: center
+
+        .text
+            display: block
+            width: 50%
+            
+            h1
+                color: $blue-dark
+                font-weight: 700
+                font-size: 24px
+                line-height: 33px
+                margin-bottom: 28px
+
+            p
+                font-weight: 400
+                font-size: 16px
+                line-height: 22px
+                width: 80%
+
+                span
+                    color: $orange
+                    font-weight: 600
+
+        .cover
+            width: 50%
+            
+            img
+                max-width: 100%
+
+// responsive
+@media (max-width: $layout-breakpoint-tablet)
+
+    .expand-description
+        margin: 10% auto 0 auto
+        width: 100%
+
+        div
+            flex-direction: column
+
+            .text
+                margin-bottom: 10%
+                width: 85%
+
+                p
+                    width: 100%
+
+            .cover
+                width: 100%
+

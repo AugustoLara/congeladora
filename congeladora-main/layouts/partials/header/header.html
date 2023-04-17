@@ -1,0 +1,36 @@
+{{ $logoRes := resources.Get "logo/congeladora.svg" }}
+{{ $logoMenu := resources.Get "icons/menu.svg" }}
+{{ $logoClose := resources.Get "icons/close.svg" }}
+
+<header>
+  <nav>
+    <a href="{{ .Site.BaseURL }}">
+      <img src="{{ $logoRes.RelPermalink }}" alt="Logo Congeladora">
+    </a>
+    <div>
+      <ul>
+        {{ range .Site.Menus.main -}}
+          <li>
+            <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+          </li>
+        {{ end -}}
+      </ul>
+    </div>
+    <a class="menu" onclick="toggleMenu(this)">
+      <img id="icon-menu" src="{{ $logoMenu.RelPermalink }}" alt="Icono menu">
+      <img id="icon-close" class="hide" src="{{ $logoClose.RelPermalink }}" alt="Icono para cerrar menu">
+    </a>
+  </nav>
+</header>
+
+<aside>
+  <div>
+    <ul>
+      {{ range .Site.Menus.main -}}
+        <li>
+          <a  href="{{ .URL }}">{{ .Pre | safeHTML }}<span>{{ .Name | safeHTML }}</span></a>
+        </li>
+      {{ end -}}
+    </ul>
+  </div>
+</aside>

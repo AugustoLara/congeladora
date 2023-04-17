@@ -1,0 +1,81 @@
+footer
+    width: 100%
+
+    nav
+        background: $bg-footer-navbar
+        padding: 25px 0
+        width: 100%
+
+        ul
+            display: flex
+            justify-content: end
+            list-style: none
+            width: 85%
+
+            li
+                margin-right: 50px
+
+                &:last-child
+                    margin-right: 0
+
+                a
+                    color: $white
+                    font-size: 14px
+                    font-weight: 600
+                    line-height: 19px
+                    text-decoration: none
+    
+    div
+        background: $bg-footer
+        padding: 20px 0
+        width: 100%
+
+        ul
+            display: flex
+            list-style: none
+            margin: auto
+            width: 80%
+
+            li
+                margin-right: 30px
+
+                &:last-child
+                    margin-right: 0
+
+                a
+                    color: $white
+                    font-weight: 600
+                    font-size: 14px
+                    line-height: 19px
+
+
+// responsive
+@media (max-width: $layout-breakpoint-tablet)
+
+    footer
+
+        nav
+
+            ul
+                display: flex
+                flex-direction: column
+                justify-content: start
+                margin: auto
+                width: 80%
+
+                li
+                    margin: 10px 0
+
+                    &:last-child
+                        display: none
+
+        div
+
+            ul
+                display: flex
+                flex-direction: column
+                justify-content: start
+
+                li
+                    margin: 10px 0
+    

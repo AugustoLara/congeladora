@@ -1,0 +1,22 @@
+[[main]]
+    name = 'Ventajas'
+    url = '/ventajas'
+    weight = 1
+
+[[main]]
+    name = 'Extiende tu negocio'
+    url = '/extiende-tu-negocio'
+    weight = 2
+
+[[main]]
+    name = 'Contacto'
+    url = '/contacto'
+    weight = 3
+
+
+[[social]]
+    name = 'Twitter'
+    url = 'https://twitter.com'
+    weight = '1'
+    [social.params]
+        icon = ''

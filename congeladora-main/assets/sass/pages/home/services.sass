@@ -1,0 +1,64 @@
+.home-services
+    background: $white
+    height: 350px
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: center
+
+    div
+        width: 100%
+
+        h1
+            color: $blue-dark
+            text-align: center
+            margin-bottom: 45px 
+
+        .row
+            display: flex
+            justify-content: center
+            width: 90%
+            margin: auto
+
+            div
+                margin: 0 70px
+                width: 25%
+
+                h2 
+                    display: flex
+                    align-items: center
+                    margin-left: -35px
+                    margin-bottom: 20px
+
+                    img
+                        width: 25px
+                        margin-right: 12px
+
+                    span
+                        color: $blue-dark
+                        font-weight: 600
+                        font-size: 16px
+                        line-height: 22px
+                
+                p
+                    font-weight: 400
+                    font-size: 14px
+                    line-height: 19px
+
+// responsive
+@media (max-width: $layout-breakpoint-tablet)
+
+    .home-services
+        height: auto
+        padding: 15% 0
+        
+        div
+
+            .row
+                flex-direction: column
+                width: 60%
+                margin: auto
+
+                div
+                    margin: 15px 0
+                    width: 100%

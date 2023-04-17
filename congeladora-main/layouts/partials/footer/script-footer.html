@@ -1,0 +1,4 @@
+{{ block "scripts" . }}
+    {{ $app := resources.Get "js/app.js" | minify -}}
+    <script src="{{ $app.Permalink }}" defer></script>
+{{ end }}

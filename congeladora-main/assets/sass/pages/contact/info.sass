@@ -1,0 +1,65 @@
+.contact-info
+    background: $white
+    display: flex
+    align-items: center
+    justify-content: center
+    height: 80vh
+    margin: auto
+    width: 80%
+
+    div
+        display: flex
+
+        .info
+            display: block
+            width: 50%
+            margin-top: -5%
+
+            h1
+                color: $blue-dark
+                font-size: 24px
+                font-weight: 700
+                line-height: 33px
+                margin-bottom: 28px
+
+            ul
+                list-style: none
+
+                li
+                    font-weight: 600
+                    font-size: 16px
+                    line-height: 22px
+                    margin-bottom: 16px
+
+                    span
+                        color: $orange
+        
+        .map
+            width: 50%
+
+            img
+                max-width: 100%
+
+// responsive
+@media (max-width: $layout-breakpoint-tablet)
+
+    .contact-info
+        height: auto
+        margin: 10% auto
+        
+        div
+            flex-direction: column
+
+            .info
+                margin-bottom: 10%
+                margin-top: 0
+                width: 100%
+
+                ul
+
+                    li
+                        br
+                            display: none
+
+            .map
+                width: 100%
